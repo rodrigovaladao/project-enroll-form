@@ -32,6 +32,7 @@
             <form method="post" enctype="multipart/form-data">
               <fieldset class="child-info">
                 <legend>Child Information</legend>
+                
                 <div class="input-wrapper">
                   <label for="fullname">Full name</label>
                   <input
@@ -40,6 +41,7 @@
                     type="text"
                     placeholder="What is the child's name?"
                   />
+                </div>
 
                   <div class="input-wrapper">
                     <label for="birth">Date of birth</label>
@@ -98,13 +100,12 @@
                       <p>click here <br />to select files</p>
                     </div>
                   </div>
-                </div>
               </fieldset>
 
               <fieldset class="address">
                 <legend>Residential address</legend>
                 <div class="input-wrapper">
-                  <label for="cep">CEP</label>
+                  <label for="cep">Post Code</label>
                   <input type="text" id="cep" name="cep" />
                 </div>
 
@@ -155,9 +156,40 @@
                   </div>
                 </div>
               </fieldset>
+
+              <fieldset class="gardian">
+                <legend>Parent Information</legend>
+
+                <div class="input-wrapper">
+                  <label for="gardian">Parent name</label>
+                  <input type="text" id="gardian" name="gardian" />
+                  <small>Primary legal emergency contact person</small>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="phone">Phone</label>
+                  <input
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    placeholder="(+61) 0416 123 456"
+                  />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="mail">Email</label>
+                  <input type="email" id="mail" name="mail" required />
+                  <div class="error">
+                    <img
+                      src="assets/icons/alert-circle.svg"
+                      alt="red alert icon"
+                    />
+                    <span>Insert a valid email</span>
+                  </div>
+                </div>
+              </fieldset>
             </form>
           </div>
-        </div>
       </main>
 
       <aside>
